@@ -1,0 +1,10 @@
+{
+  "name": "findthegap-assignment",
+  "scripts": {
+    "install:all": "npm install --prefix core && npm install --prefix host-4000 && npm install --prefix host-5000",
+    "start:core": "npm run build --prefix core && npm run preview --prefix core",
+    "start:hacker": "npm run dev --prefix hacker",
+    "start:company": "npm run dev --prefix company",
+    "start:findthegap": "npm run dev --prefix findthegap"
+  }
+}

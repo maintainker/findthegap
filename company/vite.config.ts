@@ -6,19 +6,17 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "remoteApp",
-      filename: "remoteEntry.js",
-      exposes: {
-        "./Button": "./src/components/SharedButton.tsx",
+      name: "companyApp",
+      remotes: {
+        remoteApp: "http://localhost:5173/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom"],
     }),
   ],
   build: {
     target: "esnext",
-    minify: false,
-    cssCodeSplit: false,
   },
-  server: { port: 5173 },
-  preview: { port: 5173 },
+  server: {
+    port: 4000,
+  },
 });
