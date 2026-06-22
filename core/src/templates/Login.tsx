@@ -41,35 +41,55 @@ const LoginTemplate = ({
     <>
       <Header />
       <ContentsContainer>
-        <Title>회원 로그인</Title>
-        <FormContainer onSubmit={handleSubmit}>
-          <FormInputContainer>
-            <SharedTextField
-              placeholder="아이디(이메일)을 입력해 주세요"
-              label="로그인"
-              id={"email"}
-              onChange={() => onChange("email")}
-              isError={idErrorMessage !== null}
-              ref={emailRef}
-              helpMessage={idErrorMessage !== null ? idErrorMessage : undefined}
-            />
-            <SharedTextField
-              placeholder="비밀번호를 입력해 주세요"
-              label="비밀번호"
-              id={"password"}
-              onChange={() => onChange("password")}
-              isError={passwordErrorMessage !== null}
-              ref={passwordRef}
-              helpMessage={
-                passwordErrorMessage !== null ? passwordErrorMessage : undefined
-              }
-              type="password"
-            />
-          </FormInputContainer>
-          <SharedButton type="submit" variant="Filled" size="L">
-            로그인
-          </SharedButton>
-        </FormContainer>
+        <Contents>
+          <Title>회원 로그인</Title>
+          <FormContainer onSubmit={handleSubmit}>
+            <FormInputContainer>
+              <SharedTextField
+                placeholder="아이디(이메일)을 입력해 주세요"
+                label="로그인"
+                id={"email"}
+                onChange={() => onChange("email")}
+                isError={idErrorMessage !== null}
+                ref={emailRef}
+                helpMessage={
+                  idErrorMessage !== null ? idErrorMessage : undefined
+                }
+              />
+              <SharedTextField
+                placeholder="비밀번호를 입력해 주세요"
+                label="비밀번호"
+                id={"password"}
+                onChange={() => onChange("password")}
+                isError={passwordErrorMessage !== null}
+                ref={passwordRef}
+                helpMessage={
+                  passwordErrorMessage !== null
+                    ? passwordErrorMessage
+                    : undefined
+                }
+                type="password"
+              />
+            </FormInputContainer>
+            <ButtonContainer>
+              <SharedButton
+                style={{ width: "100%" }}
+                type="submit"
+                variant="Filled"
+                size="L"
+              >
+                로그인
+              </SharedButton>
+              <TextButtonContainer>
+                <Register>
+                  <span>아직 계정이 없으신가요?</span>
+                  <SharedButton variant="Text">회원가입</SharedButton>
+                </Register>
+                <SharedButton variant="Text">비밀번호 찾기</SharedButton>
+              </TextButtonContainer>
+            </ButtonContainer>
+          </FormContainer>
+        </Contents>
       </ContentsContainer>
     </>
   );
@@ -78,6 +98,14 @@ const LoginTemplate = ({
 export default LoginTemplate;
 
 const ContentsContainer = styled.div`
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 96px);
+  justify-content: center;
+  align-items: center;
+`;
+
+const Contents = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,4 +132,26 @@ const FormInputContainer = styled.div`
   gap: 16px;
   width: 100%;
   gap: 16px;
+`;
+const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 16px;
+`;
+const TextButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+const Register = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  > span {
+    ${typography.body.m_regular}
+  }
 `;

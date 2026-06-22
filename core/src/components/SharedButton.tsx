@@ -121,6 +121,8 @@ const getVariantStyles = ($variant: ButtonVariant, $btnType: ButtonType) => {
     case "Text":
       if ($btnType === "Primary") {
         return css`
+          padding: 0;
+          height: auto;
           background-color: transparent;
           color: ${brandColor};
           border: none;
@@ -133,6 +135,8 @@ const getVariantStyles = ($variant: ButtonVariant, $btnType: ButtonType) => {
         `;
       } else {
         return css`
+          padding: 0;
+          height: auto;
           background-color: transparent;
           color: ${secondaryText};
           border: none;
@@ -167,10 +171,8 @@ const StyledButton = styled.button<{
 
   ${({ $size }) => SIZE_STYLES[$size]}
 
-  /* 변형 테마 주입 */
   ${({ $variant, $btnType }) => getVariantStyles($variant, $btnType)}
 
-  /* 🚫 State 4. Disabled (도면 회색조 명세 공통 대응) */
   &:disabled {
     background-color: var(--color-gray-200, #e5e5e5) !important;
     color: var(--color-gray-400, #a3a3a3) !important;
