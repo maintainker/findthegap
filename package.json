@@ -6,5 +6,8 @@
     "start:hacker": "npm run dev --prefix hacker",
     "start:company": "npm run dev --prefix company",
     "start:findthegap": "npm run dev --prefix findthegap"
+  },
+  "dependencies": {
+    "styled-components": "^6.4.2"
   }
 }

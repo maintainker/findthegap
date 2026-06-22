@@ -24,4 +24,6 @@ npm run start:core
 
 # 각각의 프로젝트 실행
 npm run start:hacker
+npm run start:company
+npm run start:findthegap
 ```
