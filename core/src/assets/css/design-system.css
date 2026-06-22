@@ -1,0 +1,111 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-50: #f8f8f8;
+  --color-gray-100: #f0f0f0;
+  --color-gray-200: #e6e6e6;
+  --color-gray-300: #c8c8c8;
+  --color-gray-400: #aaaaaa;
+  --color-gray-500: #8c8c8c;
+  --color-gray-600: #646464;
+  --color-gray-700: #4e4e4e;
+  --color-gray-800: #333333;
+  --color-gray-900: #222222;
+
+  --color-green-100: #dcf8e9;
+  --color-green-200: #baf3d3;
+  --color-green-300: #a7efc7;
+  --color-green-400: #71e5a5;
+  --color-green-500: #3cdc84;
+  --color-green-600: #26d776;
+  --color-green-700: #1ea85c;
+  --color-green-800: #178247;
+  --color-green-900: #116336;
+
+  --color-blue-100: #e5f1ff;
+  --color-blue-200: #acd3ff;
+  --color-blue-300: #73b6ff;
+  --color-blue-400: #3998ff;
+  --color-blue-500: #007aff;
+  --color-blue-600: #006fe8;
+  --color-blue-700: #0057b5;
+  --color-blue-800: #00438c;
+  --color-blue-900: #00336b;
+
+  --color-yellow-100: #fdf7e6;
+  --color-yellow-200: #f8e7b2;
+  --color-yellow-300: #f1cc5a;
+  --color-yellow-400: #eec239;
+  --color-yellow-500: #eab308;
+  --color-yellow-600: #d5a307;
+  --color-yellow-700: #a67f06;
+  --color-yellow-800: #816204;
+  --color-yellow-900: #624b03;
+
+  --color-red-100: #fdecec;
+  --color-red-200: #fac5c5;
+  --color-red-300: #f48282;
+  --color-red-400: #f26969;
+  --color-red-500: #ef4444;
+  --color-red-600: #d93e3e;
+  --color-red-700: #aa3030;
+  --color-red-800: #832525;
+  --color-red-900: #641d1d;
+
+  --color-Brand-100: var(--color-green-100);
+  --color-Brand-200: var(--color-green-200);
+  --color-Brand-300: var(--color-green-300);
+  --color-Brand-400: var(--color-green-400);
+  --color-Brand-500: var(--color-green-500);
+  --color-Brand-600: var(--color-green-600);
+  --color-Brand-700: var(--color-green-700);
+  --color-Brand-800: var(--color-green-800);
+  --color-Brand-900: var(--color-green-900);
+
+  --weight-bold: 700;
+  --weight-semibold: 600;
+  --weight-regular: 400;
+
+  --display-m: 32px;
+  --display-s: 24px;
+
+  --title-l: 24px;
+  --title-m: 20px;
+  --title-s: 16px;
+
+  --body-l: 16px;
+  --body-m: 14px;
+  --body-m-reading: 14px;
+  --body-s: 12px;
+  --body-s-reading: 12px;
+
+  --caption-m: 12px;
+  --caption-s: 10px;
+
+  --lh-display-m: 1.5;
+  --lh-display-s: 1.5;
+  --lh-title-l: 1.5;
+  --lh-title-m: 1.4;
+  --lh-title-s: 1.5;
+  --lh-body-l: 1.5;
+  --lh-body-m: 1.429;
+  --lh-body-m-reading: 1.714;
+  --lh-body-s: 1.333;
+  --lh-body-s-reading: 1.667;
+  --lh-caption-m: 1.333;
+  --lh-caption-s: 1.2;
+}
+
+.theme-blue {
+  --color-Brand-100: var(--color-blue-100);
+  --color-Brand-200: var(--color-blue-200);
+  --color-Brand-300: var(--color-blue-300);
+  --color-Brand-400: var(--color-blue-400);
+  --color-Brand-500: var(--color-blue-500);
+  --color-Brand-600: var(--color-blue-600);
+  --color-Brand-700: var(--color-blue-700);
+  --color-Brand-800: var(--color-blue-800);
+  --color-Brand-900: var(--color-blue-900);
+}
