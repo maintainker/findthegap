@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import { typography } from "../assets/css/typography";
 import SharedTextField from "../components/TextField";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import SharedButton from "../components/SharedButton";
 import Footer from "../components/Footer";
 

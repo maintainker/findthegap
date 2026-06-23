@@ -29,13 +29,13 @@ function SharedTextField({
   let borderColor = "var(--color-gray-200)";
   let helpMessageColor = "var(--color-gray-500)";
 
-  if (isFocused) {
-    borderColor = "var(--color-Brand-500)";
-  } else if (isError) {
+  if (isError) {
     borderColor = "var(--color-red-500)";
     helpMessageColor = "var(--color-red-500)";
   } else if (disabled) {
     borderColor = "var(--color-gray-100)";
+  } else if (isFocused) {
+    borderColor = "var(--color-Brand-500)";
   }
 
   return (
