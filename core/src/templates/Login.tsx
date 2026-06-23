@@ -7,11 +7,13 @@ import SharedButton from "../components/SharedButton";
 import Footer from "../components/Footer";
 
 const LoginTemplate = ({
+  type = "회원",
   idErrorMessage,
   passwordErrorMessage,
   onSubmit,
   onChange,
 }: {
+  type: string;
   idErrorMessage: string | null;
   passwordErrorMessage: string | null;
   onSubmit: (
@@ -30,20 +32,12 @@ const LoginTemplate = ({
     });
   };
 
-  useEffect(() => {
-    if (idErrorMessage !== null) {
-      emailRef.current?.focus();
-    } else if (passwordErrorMessage !== null) {
-      passwordRef.current?.focus();
-    }
-  }, [idErrorMessage, passwordErrorMessage]);
-
   return (
     <>
       <Header />
       <ContentsContainer>
         <Contents>
-          <Title>회원 로그인</Title>
+          <Title>{type} 로그인</Title>
           <FormContainer onSubmit={handleSubmit}>
             <FormInputContainer>
               <SharedTextField

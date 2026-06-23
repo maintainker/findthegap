@@ -12,7 +12,7 @@ export default defineConfig({
         "./components/Button": "./src/components/SharedButton.tsx",
         "./components/TextField": "./src/components/TextField.tsx",
         "./templates/Login": "./src/templates/Login.tsx",
-        "./assets/styles": "./src/style.ts",
+        "./assets/styles": "./src/assets/css/style.ts",
       },
       shared: ["react", "react-dom"],
     }),

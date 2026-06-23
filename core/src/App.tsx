@@ -23,7 +23,6 @@ function App() {
     e: React.SubmitEvent,
     { email, password }: { email: string; password: string },
   ) => {
-    console.log("???", { email, password });
     e.preventDefault();
     setTimeout(() => {
       let count = 0;
@@ -60,8 +59,11 @@ function App() {
   return (
     <>
       <LoginTemplate
-        idErrorMessage={idErrorMessage[idError] || null}
-        passwordErrorMessage={passwordErrorMessage[passwordError] || null}
+        type={"회원"}
+        idErrorMessage={(idError && idErrorMessage[idError]) || null}
+        passwordErrorMessage={
+          (passwordError && passwordErrorMessage[passwordError]) || null
+        }
         onSubmit={handleLoginSubmit}
         onChange={handleChange}
       />
