@@ -5,7 +5,9 @@ const Header = () => {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <img src={ftgLogo} alt="find the gap 로고" />
+        <a href="/">
+          <img src={ftgLogo} alt="find the gap 로고" />
+        </a>
       </HeaderContent>
     </HeaderContainer>
   );

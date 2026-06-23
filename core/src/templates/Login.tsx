@@ -4,6 +4,7 @@ import { typography } from "../assets/css/typography";
 import SharedTextField from "../components/TextField";
 import { useEffect, useRef } from "react";
 import SharedButton from "../components/SharedButton";
+import Footer from "../components/Footer";
 
 const LoginTemplate = ({
   idErrorMessage,
@@ -85,12 +86,18 @@ const LoginTemplate = ({
                   <span>아직 계정이 없으신가요?</span>
                   <SharedButton variant="Text">회원가입</SharedButton>
                 </Register>
-                <SharedButton variant="Text">비밀번호 찾기</SharedButton>
+                <SharedButton
+                  variant="Text"
+                  style={{ color: "var(--color-gray-900)" }}
+                >
+                  비밀번호 찾기
+                </SharedButton>
               </TextButtonContainer>
             </ButtonContainer>
           </FormContainer>
         </Contents>
       </ContentsContainer>
+      <Footer />
     </>
   );
 };
@@ -100,9 +107,16 @@ export default LoginTemplate;
 const ContentsContainer = styled.div`
   display: flex;
   width: 100%;
-  height: calc(100vh - 96px);
+  height: calc(100vh - 96px - 271px);
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 900px) {
+    height: calc(100vh - 96px - 315px);
+  }
+  @media (max-width: 600px) {
+    height: calc(100vh - 96px - 431px);
+  }
 `;
 
 const Contents = styled.div`

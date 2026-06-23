@@ -54,14 +54,13 @@ const SIZE_STYLES = {
   `,
 };
 
-// 🎨 2. 형태(Variant)와 타입(Type)별 인터랙션 스타일 세트
 const getVariantStyles = ($variant: ButtonVariant, $btnType: ButtonType) => {
   const brandColor = "var(--color-Brand-500)";
   const brandHover = "var(--color-Brand-600, #22c55e)";
   const brandPress = "var(--color-Brand-700, #15803d)";
 
   const secondaryColor = "var(--color-gray-100, #f5f5f5)";
-  const secondaryText = "var(--color-gray-700, #404040)";
+  const secondaryText = "var(--color-gray-600, #404040)";
 
   switch ($variant) {
     case "Filled":
