@@ -31,6 +31,13 @@
 이후 core project를 실행 한뒤
 각각의 프로젝트를 실행합니다. (package.json에 각각의 명령어를 선언해 두었으며 하기에 기재하였습니다.)
 
+각각의 로그인 아이디는
+hacker@test.com
+company@test.com
+findthegap@test.com
+
+비밀번호는 password로 동일합니다.
+
 ```bash
 # 모든 프로젝트 의존성 설치
 npm run install:all
