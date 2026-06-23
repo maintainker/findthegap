@@ -8,7 +8,7 @@
 
 ## 🚀 1. 프로젝트 개요 및 설계 의도
 
-본 프로젝트는 **"서로 다른 3개의 도메인(Hacker, Company, Admin)에서 동일한 형태의 UI 컴포넌트를 어떻게 안정적이고 확장성 있게 재사용할 것인가"**에 대한 해답으로 **Module Federation 아키텍처**를 채택하여 구현했습니다.
+본 프로젝트는 **서로 다른 3개의 도메인(Hacker, Company, Admin)에서 동일한 형태의 UI 컴포넌트를 어떻게 안정적이고 확장성 있게 재사용할 것인가**에 대한 해답으로 **Module Federation 아키텍처**를 채택하여 구현했습니다.
 
 ### 🏗️ 아키텍처 핵심 설계 (FDS: Federated Design System)
 
